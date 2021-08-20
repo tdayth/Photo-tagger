@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="369.0" prefWidth="232.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scene.addTagController">
+   <children>
+      <TextField fx:id="text" layoutX="37.0" layoutY="288.0" prefHeight="34.0" prefWidth="150.0" promptText="      Enter new tag" />
+      <Button fx:id="addBtn" disable="true" layoutX="18.0" layoutY="337.0" mnemonicParsing="false" onAction="#addButton" style="-fx-background-color: #047ff8;" text="Add" textFill="WHITE" />
+      <Button fx:id="cancelButton" cancelButton="true" layoutX="151.0" layoutY="337.0" mnemonicParsing="false" onAction="#cancelButton" style="-fx-background-color: #047ff8;" text="Close" textFill="WHITE" />
+      <Button fx:id="removeBtn" disable="true" layoutX="68.0" layoutY="337.0" mnemonicParsing="false" onAction="#removeTags" prefHeight="27.0" prefWidth="76.0" style="-fx-background-color: #047ff8;" text="Remove" textFill="WHITE" />
+      <ListView fx:id="addedTags" layoutX="16.0" layoutY="15.0" prefHeight="255.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

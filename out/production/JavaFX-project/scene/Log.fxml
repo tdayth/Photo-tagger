@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="474.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scene.LogController">
+   <children>
+      <TableView fx:id="tableView" prefHeight="226.0" prefWidth="474.0">
+        <columns>
+          <TableColumn fx:id="currName" prefWidth="125.0" text="Current name" />
+          <TableColumn fx:id="prevName" prefWidth="127.0" text="Previous name" />
+            <TableColumn fx:id="date" prefWidth="225.0" text="Date" />
+        </columns>
+      </TableView>
+      <Button fx:id="cancelButton" layoutX="406.0" layoutY="249.0" mnemonicParsing="false" onAction="#cancelLog" style="-fx-background-color: #047ff8;" text="Cancel" textFill="WHITE" />
+   </children>
+</Pane>
